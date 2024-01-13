@@ -1,0 +1,93 @@
+:root {
+  --Yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+  --ff: "Figtree", sans-serif;
+  --fw-normal: 600;
+  --fw-bold: 800;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  font-family: var(--ff);
+}
+
+.container {
+  background-color: var(--Yellow);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  background-color: var(--White);
+  max-width: 375px;
+  height: 540px;
+  padding: 1.5rem;
+  border-radius: 20px;
+  border: 1px solid var(--black);
+  box-shadow: 15px 15px 0px -4px rgba(0, 0, 0, 1);
+}
+
+.wrapper:hover {
+  box-shadow: 15px 15px 0px 3px rgba(0, 0, 0, 1);
+}
+
+.picture img {
+  width: 324px;
+  margin-bottom: 1.5rem;
+  border-radius: 15px;
+}
+
+.learning {
+  background-color: var(--Yellow);
+  padding: 0.4rem;
+  margin-bottom: 1rem;
+  width: 90px;
+  font-weight: var(--fw-bold);
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.published {
+  margin-bottom: 1rem;
+}
+
+.foundations {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.foundations:hover {
+  color: var(--Yellow);
+  cursor: pointer;
+}
+
+.content {
+  color: var(--grey);
+  width: 36ch;
+  line-height: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+}
+
+.person img {
+  width: 2rem;
+}
+
+.person p {
+  padding-left: 1rem;
+  font-weight: var(--fw-bold);
+}
