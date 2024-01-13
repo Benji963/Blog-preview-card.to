@@ -91,3 +91,17 @@ main {
   padding-left: 1rem;
   font-weight: var(--fw-bold);
 }
+
+@media screen and (max-width: 375px) {
+  main {
+    display: flex;
+    width: 100%;
+  }
+  /* .container {
+    width: 100%;
+  } */
+
+  .wrapper {
+    width: 100%;
+  }
+}
